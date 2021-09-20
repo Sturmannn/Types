@@ -2,21 +2,28 @@
 
 int main()
 {
-	int a = 4;
-	printf("a = %d\n", a);
-	char b = 'g';
-	printf("b = %c\n", b);
-	unsigned char c = 'f';
-	printf("c = %c\n", c);
-	short d = 23;
-	printf("d = %d\n", d);
-	unsigned short e = 2000;
-	printf("e = %d\n", e);
-	unsigned int f = 35025;
-	printf("f = %d\n", f);
-	long g = 1343215;
-	printf("g = %d\n", g);
-	unsigned long h = 764545645;
-	printf("h = %d\n", h);
+	int a = 2147483647;
+	unsigned int b = 4294967294;
+	long c = 2147483647;
+	unsigned long d = 4294967294;
+	float e = 0.123456;
+	double f = 0.1234567;
+	long double g = 0.1234567;
+	char h = 127;
+	unsigned char i = 255;
+	short j = 32767;
+	unsigned short k = 65535;
+
+	printf("a (int) = %d \n", a);
+	printf("b (unsigned int) = %d \n", b);
+	printf("c (long) = %d \n", c);
+	printf("d (unsigned long) = %d \n", d);
+	printf("e (float) = %f \n", e);
+	printf("f (double) = %lf \n", f);
+	printf("g (long double) = %lf \n", g);
+	printf("h (char) = %d \n", h); // %d (if h = number (-128, 127)) and %c (if h = symbol ('Z'))
+	printf("i (unsigned char) = %d \n", i);
+	printf("j (short) = %d \n", j);
+	printf("k (unsigned short) = %d \n", k);
 	return 0;
 }
